@@ -1,0 +1,91 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed' , sans-serif;
+}
+body{
+    background-color: hsla(180, 3%, 88%, 0.786);
+    padding: 1%;
+}
+.card{
+    display: flex;
+    align-items: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.review1{
+    background-color: blueviolet;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    border-radius: 1rem;  
+    color: white;
+    padding: 2%;
+    width: 250%;
+}
+.profile{
+    display: flex;
+}
+.profile img{
+    border-radius: 50%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 2.5%;
+}
+.pdegree{
+    font-size: 12px;
+}
+.para1{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 110%;
+    font-weight: 600;
+}
+.para2{
+    font-size: 13px;
+    width: 100%;
+}
+.review2{
+    background-color: rgb(67, 81, 93);
+    border-radius: 1rem;  
+    color: white;
+    padding: 2%;
+    width: 100%;
+    margin-left: 3%;
+}
+.review3{
+    background-color: white;
+    border-radius: 1rem;  
+    color: black;
+    padding: 2%;
+    width: 100%;
+    margin-left: 3%;
+    margin-top: 16%;
+}
+.card2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vh;
+    margin-right: 10vh;
+    margin-top: -10%;
+}
+.review4{
+    background-color: white;
+    border-radius: 1rem;  
+    color: black;  
+    padding: 2%;
+    width: 18%;
+    margin-left: 3%;
+}
+.review5{
+    background-color: rgb(41, 49, 69);
+    border-radius: 1rem;
+    color: white;
+    padding: 2%;
+    width: 50%;
+    margin-left: 3%;
+}
