@@ -7,6 +7,8 @@
 body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -19,7 +21,8 @@ h1{
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-   max-width: 100%;
+   width: 100%;
+   max-width: 1500px;
    gap: 5rem;
 }
 .images img{
