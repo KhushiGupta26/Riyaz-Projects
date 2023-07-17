@@ -9,20 +9,21 @@
 <body>
     <h1>My Travel Diary</h1>
     <div class="images">
-        <img src="1.jpg" onclick="filename()">
-        <img src="2.jpg" onclick="filename()">
-        <img src="3.jpg" onclick="filename()">
-        <img src="4.jpg" onclick="filename()">
-        <img src="5.jpg" onclick="filename()">
-        <img src="9.jpg" onclick="filename()">
-        <img src="10.jpg" onclick="filename()">
-        <img src="11.jpg" onclick="filename()">
-        <img src="12.jpg" onclick="filename()">
+        <img src="1.jpg" onclick="filename(this)">
+        <img src="2.jpg" onclick="filename(this)">
+        <img src="3.jpg" onclick="filename(this)">
+        <img src="4.jpg" onclick="filename(this)">
+        <img src="5.jpg" onclick="filename(this)">
+        <img src="9.jpg" onclick="filename(this)">
+        <img src="10.jpg" onclick="filename(this)">
+        <img src="11.jpg" onclick="filename(this)">
+        <img src="12.jpg" onclick="filename(this)">
     </div>
     
 <script>
-    function filename(){
-        alert("Photo Gallery")
+        function filename(image){
+           var filename = image.src;
+           alert(filename);
     }
 </script>
 
