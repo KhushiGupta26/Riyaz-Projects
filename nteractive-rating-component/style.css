@@ -72,6 +72,9 @@ p{
     background-color: #fff;
     color: hsl(25, 97%, 53%);
 }
+.btn:focus {
+    background-color: hsl(25, 97%, 53%);
+}
 
 /* THANK YOU */
 .thank-you{
