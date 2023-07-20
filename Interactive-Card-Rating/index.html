@@ -20,11 +20,11 @@
     </p>
 
     <ul>
-      <li><button class="btn">1</button></li>
-      <li><button class="btn">2</button></li>
-      <li><button class="btn">3</button></li>
-      <li><button class="btn">4</button></li>
-      <li><button class="btn">5</button></li>
+      <li><button class="btn" onclick="updateRating(1)">1</button></li>
+      <li><button class="btn" onclick="updateRating(2)">2</button></li>
+      <li><button class="btn" onclick="updateRating(3)">3</button></li>
+      <li><button class="btn" onclick="updateRating(4)">4</button></li>
+      <li><button class="btn" onclick="updateRating(5)">5</button></li>
     </ul>
 
     <button class="btn-submit" id="submit-rating">SUBMIT</button>
@@ -48,26 +48,33 @@
   <!-- Thank you state end -->
   </div>
 
-  <script>
+<script>
   const mainContainer = document.querySelector(".container");
-const thanksContainer = document.querySelector(".thank-you");
-const submitButton = document.querySelector('#submit-rating');
-var actualRating = document.querySelector('#rating');
-var givenRatings = document.querySelectorAll('.btn');
+  const thanksContainer = document.querySelector(".thank-you");
+  const submitButton = document.querySelector('#submit-rating');
+  var actualRating = document.querySelector('#rating');
+  // var givenRatings = document.querySelectorAll('.btn');
+  
+  thanksContainer.style.display = 'none';
 
-thanksContainer.style.display = 'none';
-
-submitButton.addEventListener("click", myFunction);
-
+  submitButton.addEventListener("click", myFunction);
+  
+  let Rating = 0;
+  
+  function updateRating(newRating){
+    Rating = newRating;
+    actualRating.innerHTML = Rating;
+  }
+  // givenRatings.addEventListener("click", function givenRatings(newRating){
+  //   updateRating(newRating);
+  // })
     function myFunction(){
         mainContainer.style.display = "none";
         thanksContainer.style.display = "block";
-        actualRating.innerHTML = givenRatings.innerHTML;
+        updateRating(newRating);
     }
 
-
-
-    </script>
+</script>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
