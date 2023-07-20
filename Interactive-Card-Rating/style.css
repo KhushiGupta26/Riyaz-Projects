@@ -83,6 +83,7 @@ p{
     text-align: center;
     border-radius: 2vh;
     max-width: 400px;
+    min-width: 300px;
 }
 .gray{
     background-color: hsl(213, 19%, 18%);
@@ -101,6 +102,8 @@ p{
     font-size: 15px;
     color: #fff;
     margin-top: 20px;
+    width: 400px;
+    text-align: center;
 }
 .attribution a{
     color: #517dca;
