@@ -21,6 +21,7 @@ body{
     max-width: 400px;
 }
 .container img {
+    width: 50px;
     padding: 10px;
     border-radius: 50%;
     background-color: hsl(213, 19%, 18%);
@@ -84,6 +85,9 @@ p{
     border-radius: 2vh;
     max-width: 400px;
     min-width: 300px;
+}
+.thank-you img{
+    width: 100px;
 }
 .gray{
     background-color: hsl(213, 19%, 18%);
